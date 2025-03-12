@@ -7,6 +7,7 @@ import Hero from './components/layout/herosection';
 import About from './components/layout/about';
 import History from './components/layout/history';
 import Footer from './components/layout/footer';
+import Bar from './components/layout/bar';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <About/>
       <History/>
+      <Bar></Bar>
       <Footer/>
     </>
   );

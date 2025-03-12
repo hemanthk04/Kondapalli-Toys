@@ -55,7 +55,7 @@ body{
 @layer base {
   body {
     @apply bg-[var(--background-color)] text-[var(--text-color)];
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'DM Sans', sans-serif;
   }
 }
 
