@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Montserrat from Google Fonts (Already added in index.html) */
+/* Hide Scrollbar for Chrome safari and Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+/* for firefox */
+.container {
+  max-width: 100%;
+  padding: 0;
+}
+
+#root{
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margins and ensure full width */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* Import Migra from Local Files */
+@font-face {
+  font-family: 'Migra';
+  src: url('/fonts/MigraEB.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  margin:0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Define Colors */
+:root {
+  --primary-color: #4A1D1F; /* Dark Brown */
+  --secondary-color: #FFD700; /* Gold */
+  --text-color: #331E1F; /* Dark Text */
+  --background-color: #FFFBF3; /* Light Beige */
+}
+
+/* Apply Fonts */
+@layer base {
+  body {
+    @apply bg-[var(--background-color)] text-[var(--text-color)];
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Utility Classes */
+.font-migra {
+  font-family: 'Migra', serif;
+}
+
+.font-libre {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
