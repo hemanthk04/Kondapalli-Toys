@@ -5,6 +5,8 @@ import About from "./components/layout/about";
 import History from "./components/layout/history";
 import Footer from "./components/layout/footer";
 import Maps from "./components/pages/Maps"; // Import the new Maps page
+import Gallery from "./components/pages/gallery";
+import Bar from "./components/layout/bar";
 
 function App() {
   return (
@@ -16,12 +18,14 @@ function App() {
           element={
             <>
               <Hero />
-              <About />
+              <About/>
               <History />
+              <Bar></Bar>
             </>
           }
         />
         <Route path="/maps" element={<Maps />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <Footer classname ="mt-12"/>
     </Router>

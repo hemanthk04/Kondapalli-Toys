@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col  items-center justify-center w-full bottom-0 max-w-screen overflow-hidden  bg-[#40180E] text-white ">
+    <footer className="flex flex-col items-center justify-center w-full bottom-0 max-w-screen overflow-hidden  bg-[#40180E] text-white ">
       <div className="w-full">
         {/* Brand Name */}
         <div className="px-8 py-6">

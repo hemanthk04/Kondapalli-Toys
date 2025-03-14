@@ -3,7 +3,7 @@ import React from "react";
 
 const History = () => {
   return (
-    <section className="w-full py-8 px-6 md:px-20 flex flex-col md:flex-row items-start justify-between">
+    <section className="w-full py-8 px-6 md:px-20  mb-18 flex flex-col md:flex-row items-start justify-between">
       {/* Text Section */}
       <div className="md:w-1/2 text-left">
         <h2 className="text-xl font-bold text-[#5A2E14]">

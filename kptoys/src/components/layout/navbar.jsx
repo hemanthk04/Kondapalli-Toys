@@ -28,7 +28,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/about" className="hover:font-[500] cursor-pointer">
+            <Link to="/gallery" className="hover:font-[500] cursor-pointer">
               Gallery
             </Link>
           </li>
