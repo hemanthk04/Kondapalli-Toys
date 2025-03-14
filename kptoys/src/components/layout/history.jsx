@@ -28,7 +28,7 @@ const History = () => {
         <img
           src="src/assets/historyimage.png"
           alt="Kondapalli Toys"
-          className="w-auto max-h-[300px] h-auto rounded-sm shadow-md object-cover"
+          className="w-auto max-h-[300px] h-auto rounded-md shadow-md object-cover"
         />
       </div>
     </section>

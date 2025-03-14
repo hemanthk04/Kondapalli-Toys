@@ -1,27 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/navbar";
-import Hero from './components/layout/herosection';
-import About from './components/layout/about';
-import History from './components/layout/history';
-import Footer from './components/layout/footer';
-import Bar from './components/layout/bar';
+import Hero from "./components/layout/herosection";
+import About from "./components/layout/about";
+import History from "./components/layout/history";
+import Footer from "./components/layout/footer";
+import Maps from "./components/pages/Maps"; // Import the new Maps page
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
+    <Router>
       <Navbar />
-      <Hero />
-      <About/>
-      <History/>
-      <Bar></Bar>
-      <Footer/>
-    </>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <About />
+              <History />
+            </>
+          }
+        />
+        <Route path="/maps" element={<Maps />} />
+      </Routes>
+      <Footer classname ="mt-12"/>
+    </Router>
   );
 }
 
-export default App
+export default App;
