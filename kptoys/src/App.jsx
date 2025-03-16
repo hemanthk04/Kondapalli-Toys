@@ -4,7 +4,7 @@ import Hero from "./components/layout/herosection";
 import About from "./components/layout/about";
 import History from "./components/layout/history";
 import Footer from "./components/layout/footer";
-import Maps from "./components/pages/Maps"; // Import the new Maps page
+import Maps from "./components/pages/maps"; // Import the new Maps page
 import Gallery from "./components/pages/gallery";
 import Bar from "./components/layout/bar";
 
