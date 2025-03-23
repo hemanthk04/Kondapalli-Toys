@@ -1,5 +1,5 @@
 import React from "react";
-
+import historyImage from "../../assets/historyimage.png";
 
 const History = () => {
   return (
@@ -26,7 +26,7 @@ const History = () => {
       {/* Image Section */}
       <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
         <img
-          src="src/assets/historyimage.png"
+          src={historyImage}
           alt="Kondapalli Toys"
           className="w-auto max-h-[300px] h-auto rounded-md shadow-md object-cover"
         />
