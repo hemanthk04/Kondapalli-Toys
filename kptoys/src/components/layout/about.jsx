@@ -1,5 +1,5 @@
 import React from "react";
-
+import aboutImage from '../../assets/aboutimage.png';
 const About = () => {
   return (
     <section className="w-full py-8 px-2 mx-auto md:px-20 mt-8  flex flex-col md:flex-row items-center justify-between">
@@ -25,7 +25,7 @@ const About = () => {
       {/* Image Section */}
       <div className="md:w-1/2 flex justify-center mt-6 md:mt-0">
         <img
-          src="src/assets/aboutimage.png"
+          src={aboutImage}
           alt="Kondapalli Toys"
           className="w-auto max-h-[400px] md:max-h-[300px] align-baseline h-auto rounded-sm"
         />
